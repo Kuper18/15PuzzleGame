@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Permanent Marker', cursive;
+  background-color: #ccd6a6;
+}
+
+.move {
+  color: #256d85;
+  text-align: center;
+  font-weight: 100;
+}
+
+span {
+  color: #ff502f;
+  font-weight: 100;
+}
+
+#restart {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #256d85;
+  letter-spacing: 3px;
+  border-radius: 20px;
+  font-weight: 100;
+  background-color: #ebefd0;
+  border: solid #49beb7 4px;
+  padding: 5px 20px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game {
+  position: relative;
+  padding: 5px;
+  width: 530px;
+  height: 530px;
+  border: solid 10px #256d85;
+  background-color: #256d85;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  margin: 5px;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: #ebefd0;
+  color: #ff502f;
+  font-family: 'Sacramento', cursive;
+  font-weight: 900;
+  border: solid 10px #49beb7;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.buttons {
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 572px) {
+  .game {
+    width: 375px;
+    height: 375px;
+  }
+
+  .buttons {
+    width: 375px;
+  }
+
+  .box {
+    height: 85px;
+    width: 85px;
+    font-size: 1.5rem;
+    border: solid 7px #49beb7;
+  }
+}
+
+@media (max-width: 410px) {
+  .game {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  .buttons {
+    width: 350px;
+  }
+
+  .box {
+    height: 80px;
+    width: 80px;
+    border: solid 5px #49beb7;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 374px) {
+  .game {
+    width: 280px;
+    height: 280px;
+  }
+
+  .buttons {
+    width: 280px;
+  }
+
+  .box {
+    height: 65px;
+    width: 65px;
+    font-weight: 1rem;
+    margin: 0px;
+  }
+}
